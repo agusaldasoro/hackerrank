@@ -4,7 +4,7 @@ Note: This challenge introduces precision problems. The test cases are scaled to
 
 Input Format
 
-The first line contains an integer, , denoting the size of the array. 
+The first line contains an integer, , denoting the size of the array.
 The second line contains  space-separated integers describing an array of numbers .
 
 Output Format
@@ -17,7 +17,7 @@ A decimal representing of the fraction of zeroes in the array.
 Sample Input
 
 6
--4 3 -9 0 4 1         
+-4 3 -9 0 4 1
 Sample Output
 
 0.500000
@@ -25,7 +25,7 @@ Sample Output
 0.166667
 Explanation
 
-There are  positive numbers,  negative numbers, and  zero in the array. 
+There are  positive numbers,  negative numbers, and  zero in the array.
 The respective fractions of positive numbers, negative numbers and zeroes are ,  and , respectively.*/
 
 #include <cmath>
@@ -59,7 +59,7 @@ int main(){
     int n;
     cin >> n;
     vector<int> arr(n);
-    for(int arr_i = 0;arr_i < n;arr_i++){
+    for(int arr_i = 0; arr_i < n; arr_i++){
        cin >> arr[arr_i];
     }
     vector<float> res = plusMinus(arr);
